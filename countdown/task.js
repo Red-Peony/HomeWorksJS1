@@ -1,5 +1,3 @@
-/*const statusTimer = document.getElementById("status");
-statusTimer.textContent = "До окончания акции осталось";*/
 const countdown = function(){
     const timer = document.getElementById("timer");  
     if (timer.textContent > 0) {
@@ -12,5 +10,3 @@ const countdown = function(){
 }
 
 let timerID = setInterval(countdown, 100);
-
-
