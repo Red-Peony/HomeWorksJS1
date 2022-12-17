@@ -1,13 +1,18 @@
 const image = document.getElementById("cookie");
 const clickerCounter = document.getElementById("clicker__counter");
 
-image.onclick = function() {
-    clickerCounter += 1;
-    console.log(clickerCounter);
-    image.width = 300;
-    image.height = 300;
+function changeSizes() {
+    if (clickerCounter.textContent % 2 === 0) {
+        image.width = 250;
+        image.height = 200; 
+    } else {
+        image.width = 200;
+        image.height = 128; 
+    }
+    
+    clickerCounter.textContent ++;
 }
 
+image.onclick = changeSizes;
 
 
-    
